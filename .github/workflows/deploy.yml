@@ -10,11 +10,13 @@ on:
 permissions:
   contents: write
 
-jobs:
+defaults:
   run:
     shell: bash
     working-directory: ./site4567
 
+
+jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest

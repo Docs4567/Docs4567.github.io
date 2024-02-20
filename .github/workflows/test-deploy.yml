@@ -7,10 +7,12 @@ on:
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
-jobs:
+defaults:
   run:
     shell: bash
     working-directory: ./site4567
+
+jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
