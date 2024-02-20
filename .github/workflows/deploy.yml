@@ -10,11 +10,6 @@ on:
 permissions:
   contents: write
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./site4567
-
 
 jobs:
   deploy:
@@ -28,6 +23,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
+          cache-dependency-path: site4567/package-lock.json
 
 
       - name: Install dependencies
